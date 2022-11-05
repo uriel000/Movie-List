@@ -1,0 +1,44 @@
+<form action="/api/movie" method="POST" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="title" class="text-light">Title</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="title" value="" placeholder="Title">
+        </div>
+        <div class="form-group">
+            <label for="director" class="text-light">Director</label>
+            <input type="text" name="director" value="" placeholder="Director">
+        </div>
+        <div class="form-group">
+            <label for="genre" class="text-light">Genre</label>
+            <input type="text" name="genre" value="" placeholder="Genre">
+        </div>
+        <div class="form-group">
+            <label for="duration" class="text-light">Duration</label>
+            <input type="number" name="duration" value="" placeholder="Duration">
+        </div>
+        <div class="form-group">
+            <label for="logline" class="text-light">Logline</label>
+            <input type="text" name="logline" value="" placeholder="Logline">
+        </div>
+        <div class="form-group">
+            <label for="watched" class="text-light">Status</label>
+            <div class="radio inline">
+                <input type="radio" name="status" id="radio-2" value="watched">
+                <label for="radio-2" class="radio-label">Watched</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" name="status"
+                id="radio-3"  value="pending">
+                <label for="radio-3" class="radio-label">Pending</label>
+            </div>
+            
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+        
+    </div>
+
+    
+</form>
